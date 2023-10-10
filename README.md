@@ -14,12 +14,12 @@
 
 
 **基础要求**：
-1. 基于torch.nn.TransformerDecoder实现模型；
+1. 基于[torch.nn.TransformerDecoder](https://pytorch.org/docs/stable/generated/torch.nn.TransformerDecoder.html)实现模型；
 2. 以perplexity为验证集/测试集的评价指标；
 
 **进阶要求**：
-1. 基于torch.nn.MultiheadAttention和torch.nn.Linear实现模型；
-2. 手动实现beam search（或者其他的解码算法也可以）；
+1. 基于[torch.nn.MultiheadAttention](https://pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html)实现模型；
+2. 手动实现beam search（或者其他的搜索算法也可以）；
 3. 输入标题和关键词，输出诗歌，以BLEU值为验证集/测试集的评价指标；
 
 **提交结果**：
