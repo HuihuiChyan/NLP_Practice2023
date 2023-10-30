@@ -10,19 +10,20 @@
 
 **格式**：
 
-`` 标题: <Title> 关键词: <keyword1> <keyword2> 诗歌: <line1>|<line2>|<line3>|<line4> ``
+```
+输入： 标题: <Title> 关键词: <keyword1> <keyword2> 诗歌: 
+输出： <line1>|<line2>|<line3>|<line4> 
+````
 
-
-**基础要求**：
-1. 基于[torch.nn.TransformerDecoder](https://pytorch.org/docs/stable/generated/torch.nn.TransformerDecoder.html)实现模型；
-2. 以perplexity为验证集/测试集的评价指标；
-
-**进阶要求**：
-1. 基于[torch.nn.MultiheadAttention](https://pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html)实现模型；
-2. 手动实现beam search（或者其他的搜索算法也可以）；
-3. 输入标题和关键词，输出诗歌，以BLEU值为验证集/测试集的评价指标；
+**要求**：
+1. 尽可能基于更加底层的函数实现该模型，比如[torch.nn.MultiheadAttention](https://pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html)；
+2. 可以先参考别人的代码，运行实现，但是最终提交的代码一定是自己手写的；
+3. 仅使用训练集中的数据进行训练，禁止使用验证集/测试集训练；
 
 **提交结果**：
-1. 源代码（不需要打包数据集）；
-2. 测试结果截图；
-3. 实验报告（Markdown格式，想写多少写多少）；
+1. 源代码：不需要打包数据集）；
+2. 实验报告：README.md形式，包含以下内容：
+    1. 超参数设置（层数、词表大小、学习率、训练轮数等等）；
+    2. 在验证集和测试集上的perplexity；
+    3. 测试集中前五首诗的生成结果；
+    4. 实验过程中的发现和心得，或者其他任何你想要分享的内容；
