@@ -2,8 +2,9 @@
 
 超参数：
 
-| d_model | 768 |
+| param | value |
 | --- | --- |
+| d_model | 768 |
 | n_head | 8 |
 | num_layers | 12 |
 | batch_size | 32 |
