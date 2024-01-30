@@ -30,14 +30,14 @@
 
 ## 测试结果
 
-![ppl](.\img\ppl.jpg)
+![ppl](./img/ppl.jpg)
 
 ## 结果样例
-![test](.\img\test.jpg)
+![test](./img/test.jpg)
 
 测试集中前五首的生成结果如上图所示；
 
-![input](.\img\input.png)
+![input](./img/input.png)
 
 人工测试结果如上图所示；
 
@@ -47,19 +47,19 @@
 
 测试集：
 
-![test_exp](.\img\test_exp.png)
+![test_exp](./img/test_exp.png)
 
 验证集：
 
-![valid_exp](.\img\valid_exp.png)
+![valid_exp](./img/valid_exp.png)
 
 epoch7：
 
-![epoch7](.\img\epoch7.jpg)
+![epoch7](./img/epoch7.jpg)
 
 epoch25：
 
-![epoch25](.\img\epoch25.jpg)
+![epoch25](./img/epoch25.jpg)
 
 1.就loss极小值而言，heads数量选取4~8更好；
 
